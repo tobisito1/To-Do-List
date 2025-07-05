@@ -1,0 +1,229 @@
+
+body {
+    font-family:"Barlow Semi Condensed", sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #363635;
+    align-items: flex-start;   
+    padding-top: 100px;        
+    overflow: hidden;         
+    box-sizing: border-box;
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 15px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color:#2d2d2c;
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+        color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    flex-direction: row;     
+    justify-content: center;
+    gap: 15px;               
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+#dateNumber {
+        color: whitesmoke;
+    font-size: 550px;
+}
+
+#dateText {
+    margin-top: 20px;  
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: right;
+}
+
+#dateMonth,
+#dateNumber,
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+#dateNumber {
+  font-size: 44px;
+}
+
+
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color:white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton  {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(18, 39, 26);
+    
+}
+
+.orderButton {
+  color: whitesmoke;
+}
+
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #81E979;
+}
+
+.addTaskButton:active{
+  background-color: #7dcd78;
+}
+
+.orderButton {
+    background-color:#ab3535;
+    color: whitesmoke;
+    font-family:"Barlow Semi Condensed"
+}
+
+.orderButton:active{
+  background-color: #7f2828;
+}
+
+.task {
+    background-color: #81E979;
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: grey;
+    text-decoration: line-through;
+    color: var(--dark);
+}
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1d1a;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 50;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  height: 80px;
+}
+
+
+.menu-text {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.4s ease;
+  font-size: 50px;
+  top: 50;
+
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    filter: blur(2px);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 65px;
+  top: 40px;
+}
+
+.git {
+  width: 24px;
+  height: 30px;
+   fill: white;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.0rem;
+}
+
+.glow-effect {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(ellipse at center, rgb(213, 213, 173) 0%, transparent 80%);
+  filter: blur(60px);
+  opacity: 0.6;
+  z-index: 0;
+  animation: riseGlow 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes riseGlow {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(-50%) translateY(-30px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.4;
+  }
+}
